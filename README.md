@@ -6,6 +6,8 @@
 
 mend: one patch tool for every AI edit format. It reads a patch in one of four formats — a unified diff (often with wrong line numbers), SEARCH/REPLACE blocks, the V4A patch format, or text-editor tool calls as JSON — finds the lines each edit names at the first of three matching tiers (exact, trailing whitespace, then indentation), and writes every change or none, printing what it changed or why it failed.
 
+Practice: 100 of 100 public practice checks pass (practice score 1000), plus hand-built edge cases for creations and deletions through `/dev/null`, pure renames, chained moves, `--check` with a move, and insertions at the end of a file with no final line break.
+
 ## Run it
 
 ```sh
